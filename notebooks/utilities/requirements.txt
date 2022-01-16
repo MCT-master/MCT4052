@@ -1,0 +1,11 @@
+numpy
+pandas
+matplotlib
+scipy
+librosa
+sklearn
+pretty_midi
+python-osc
+mir_eval
+openpyxl
+tensorflow
