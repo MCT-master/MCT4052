@@ -129,7 +129,7 @@ dmypy.json
 .pyre/
 
 #images
-.png
+*.png
 
 .DS_Store
 notebooks/workshops/*.csv
