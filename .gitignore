@@ -128,6 +128,9 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+#images
+.png
+
 .DS_Store
 notebooks/workshops/*.csv
 notebooks/workshops/*.pkl
