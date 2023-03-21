@@ -1,4 +1,4 @@
-#N canvas 1151 336 970 738 12;
+#N canvas 686 141 970 738 12;
 #X msg 25 33 listen 0;
 #X obj 25 101 netreceive -u -b;
 #X obj 25 137 oscparse;
@@ -27,7 +27,7 @@
 #X msg 245 48 listen 12000;
 #X obj 452 496 print from_Wek;
 #X obj 252 294 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
-#N canvas 1442 359 862 860 Frequency_Modulation-L 0;
+#N canvas 127 111 862 860 Frequency_Modulation-L 1;
 #X obj 38 474 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X floatatom 278 529 5 0 0 0 - - - 0;
 #X obj 280 507 hsl 128 15 0.01 1 1 0 empty empty Volume -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
@@ -96,7 +96,7 @@
 #X obj 248 265 s fmL;
 #X obj 400 264 s fmR;
 #X obj 252 341 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
-#N canvas 1442 359 862 860 Frequency_Modulation-R 0;
+#N canvas 866 137 862 860 Frequency_Modulation-R 1;
 #X obj 38 474 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X floatatom 278 529 5 0 0 0 - - - 0;
 #X obj 280 507 hsl 128 15 0.01 1 1 0 empty empty Volume -2 -8 0 10 #fcfcfc #000000 #000000 0 1;
@@ -155,7 +155,7 @@
 #X obj 56 323 print OSC;
 #X msg 617 287 listen 12002;
 #X obj 617 443 change;
-#X text 245 26 REGRESSION, f 10;
+#X text 245 26 REGRESSION;
 #X text 614 260 CLASSIFICATION;
 #X obj 594 585 pluck~, f 14;
 #X obj 581 556 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -172,6 +172,7 @@
 #X connect 3 0 4 0;
 #X connect 9 0 10 0;
 #X connect 10 0 14 0;
+#X connect 10 0 43 0;
 #X connect 15 0 1 0;
 #X connect 16 0 4 0;
 #X connect 17 0 19 0;
