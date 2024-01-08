@@ -3,7 +3,7 @@ pandas
 matplotlib
 scipy
 librosa
-sklearn
+scikit-learn
 pretty_midi
 python-osc
 mir_eval
