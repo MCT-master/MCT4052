@@ -134,3 +134,4 @@ dmypy.json
 .DS_Store
 notebooks/workshops/*.csv
 notebooks/workshops/*.pkl
+notebooks/workshops/logs/*
