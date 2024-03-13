@@ -151,7 +151,7 @@
     "\n",
     "model = tf.keras.Sequential([\n",
     "    tf.keras.layers.Input(batch_shape=(1,regression_size_smp,1)), # the RNN expect 3D array, so we specify batches of 1\n",
-    "    tf.keras.layers.SimpleRNN(32, activation='relu',stateful=True), #number of  units 4 is the vector size for C and H,\n",
+    "    tf.keras.layers.SimpleRNN(32, activation='relu',stateful=True), #number of  units 32 is the vector size for C and H, which determine \"how much/far\" the RNN can remember\n",
     "    #stateful must be true to remember across batches (in our case we work with a single batch, which is prediction of one sample)\n",
     "    tf.keras.layers.Dense(1) # no activation layer on the output, we predict one sample only\n",
     "])\n",
